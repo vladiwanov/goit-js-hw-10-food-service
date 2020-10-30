@@ -10,7 +10,6 @@ const Theme = {
 
 const themeEvent = document.querySelector('.theme-switch__toggle');
 const body = document.querySelector('body');
- console.log(localStorage.getItem('theme'));
 localStorage.getItem('theme') === null? body.classList.add(Theme.LIGHT):body.classList.value = localStorage.getItem('theme')
 
 if (body.classList.value === Theme.DARK) {
