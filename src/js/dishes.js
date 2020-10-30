@@ -1,27 +1,17 @@
 import menuItem from '../templates/menu-item-template.hbs'
 import menu from './menu.json';
+
 console.log(menu);
 console.log(menuItem);
 
+const dishesList = document.querySelector('.js-menu')
+console.log(dishesList);
+
+ 
+const listMenu = menuItem(menu);
+console.log(listMenu);
+
+    dishesList.insertAdjacentHTML("beforeend", listMenu);
 
 
-// const menuItem = require ('./templates/menu-item-template.hbs')
-// console.log(menuItem);
-
-// const greeter = require('./greeter');
-/*
-import '../css/common.css';
-import '../css/gallery.css';
-import countries from './countries.json';
-import itemsTemplate from '../templates/gallery-items.hbs';
-
-const galleryRef = document.querySelector('.js-gallery');
-
-const markup = itemsTemplate(countries);
-galleryRef.insertAdjacentHTML('beforeend', markup); 
-
-*/
-
-// const markup = menuItem(menu);
-// console.log(markup);
 

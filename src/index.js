@@ -1,11 +1,6 @@
 import "./sass/main.scss";
-
 import themechange from './js/theme.js';
-import dishesList from './js/dishes.js';
-
-
-
-
+const dishesList = require('./js/dishes.js');
 
 
 
