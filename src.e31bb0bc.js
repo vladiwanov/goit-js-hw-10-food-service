@@ -2254,7 +2254,6 @@ var templateFunction = _handlebars.default.template({
         alias2 = container.hooks.helperMissing,
         alias3 = "function",
         alias4 = container.escapeExpression,
-        alias5 = container.lambda,
         lookupProperty = container.lookupProperty || function (parent, propertyName) {
       if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
         return parent[propertyName];
@@ -2305,7 +2304,7 @@ var templateFunction = _handlebars.default.template({
           "column": 37
         }
       }
-    }) : helper)) + "</h2>\n      <p class=\"card__price\">\n        <i class=\"material-icons\"> " + alias4(alias5(depth0 != null ? lookupProperty(depth0, "./images/sprite.svg#monetization_on") : depth0, depth0)) + " </i>\n        " + alias4((helper = (helper = lookupProperty(helpers, "price") || (depth0 != null ? lookupProperty(depth0, "price") : depth0)) != null ? helper : alias2, _typeof(helper) === alias3 ? helper.call(alias1, {
+    }) : helper)) + "</h2>\n      <p class=\"card__price\">\n        <i class=\"material-icons\"> monetization_on </i>\n        " + alias4((helper = (helper = lookupProperty(helpers, "price") || (depth0 != null ? lookupProperty(depth0, "price") : depth0)) != null ? helper : alias2, _typeof(helper) === alias3 ? helper.call(alias1, {
       "name": "price",
       "hash": {},
       "data": data,
@@ -2363,7 +2362,7 @@ var templateFunction = _handlebars.default.template({
           "column": 50
         }
       }
-    }) : helper)) + "\">\n      <i class=\"material-icons button__icon\"> " + alias4(alias5(depth0 != null ? lookupProperty(depth0, "./images/sprite.svg#") : depth0, depth0)) + " </i>\n      В корзину\n    </button>\n  </article>\n</li>\n";
+    }) : helper)) + "\">\n      <i class=\"material-icons button__icon\">  shopping_cart  </i>\n      В корзину\n    </button>\n  </article>\n</li>\n";
   },
   "2": function _(container, depth0, helpers, partials, data) {
     return "        <li class=\"tag-list__item\">" + container.escapeExpression(container.lambda(depth0, depth0)) + "</li>\n";
@@ -2510,7 +2509,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61898" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49954" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
